@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/lisempleado.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/empleados.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de empleados</title>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <caption>Listado de Empleados</caption>
+            <tr class="texto">
+                <th>Num</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>DNI</th>
+                <th>Dirección</th>
+                <th>Departamento</th>
+                <th></th>
+            </tr>
+            <tr >
+                <td>1</td>
+                <td>Pepe</td>
+                <td>García</td>
+                <td>pepegarcia@gmail.com</td>
+                <td>642061117</td>
+                <td>66554477L</td>
+                <td>c/ Viento Aire</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>María</td>
+                <td>López</td>
+                <td>marialop33@gmail.com</td>
+                <td>675152347</td>
+                <td>22113344X</td>
+                <td>c/ Gran Vía</td>
+                <td>Administración</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Federico</td>
+                <td>García</td>
+                <td>Fede63@gmail.com</td>
+                <td>689214563</td>
+                <td>66554477L</td>
+                <td>c/ Miguel Hernández</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Marina</td>
+                <td>Ruiz</td>
+                <td>marina15@gmail.com</td>
+                <td>654213675</td>
+                <td>22113344X</td>
+                <td>c/ Camarón de a isla</td>
+                <td>Administración</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Martín</td>
+                <td>García</td>
+                <td>martin3556@mail.com</td>
+                <td>638120315</td>
+                <td>66554477L</td>
+                <td>c/ Gran vía</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+        </table>
+        <!-- Modal de Confirmación -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <p>¿Estás seguro de que deseas borrar?</p>
+                <button class="btn danger" onclick="borrarElemento()">Sí, Borrar</button>
+            </div>
+        </div>
+        <br>
+        <table>
+            <caption>Listado</caption>
+            <tr class="texto">
+                <th>CódEmp</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Departamento</th>
+                <th></th>
+            </tr>
+            <tr >
+                <td>1</td>
+                <td>Pepe</td>
+                <td>García</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>María</td>
+                <td>López</td>
+                <td>Administración</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Federico</td>
+                <td>García</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Marina</td>
+                <td>Ruiz</td>
+                <td>Administración</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Martín</td>
+                <td>García</td>
+                <td>RRHH</td>
+                <td><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmarBorrado()">Borrar</button></td>
+            </tr>
+        </table>
+    </div>
+     <!-- Modal de Confirmación -->
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <p>¿Estás seguro de que deseas borrar?</p>
+            <button class="btn danger" onclick="borrarElemento()">Sí, Borrar</button>
+        </div>
+    </div>
+    <script src="./js/insercion.js"></script>
+</body>
+</html>
